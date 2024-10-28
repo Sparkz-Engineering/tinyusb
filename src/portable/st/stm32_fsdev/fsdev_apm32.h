@@ -221,7 +221,7 @@ void dcd_int_disable(uint8_t rhport) {
 }
 
 // Internal Pullups
-#ifdef(APM32F072)
+#if defined(APM32F072)
 void dcd_disconnect(uint8_t rhport) {
   (void) rhport;
   USBD->BCD_B.DPPUCTRL = 0b0;
