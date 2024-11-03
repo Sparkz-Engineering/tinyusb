@@ -36,7 +36,7 @@
 
 #if CFG_TUSB_MCU == OPT_MCU_APM32F0
   #include "apm32f0xx.h"
-  #define FSDEV_PMA_SIZE (512u)
+  #define FSDEV_PMA_SIZE (1024u)
   #define FSDEV_REG_BASE USBD_BASE
   #define FSDEV_PMA_BASE (USBD_BASE + 0x00000400)
 
